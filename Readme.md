@@ -4,7 +4,8 @@ Joanalyzer is a kind of app that let you know about any YouTube channel it allow
 to search a channel then it will show list of some Channels that have Relevance with that search from API , By that any-one can select
 the channel that they wants to know Details of it.
 
-It Provides the following Information about a YouTube Channel You Search <em>
+It Provides the following Information about a YouTube Channel You Search 
+<em>
 
    1 ) YouTube Thumbnail of that Channel
     
@@ -17,7 +18,9 @@ It Provides the following Information about a YouTube Channel You Search <em>
     5 ) Net Number of Videos on that Channel ( Uploaded Publicaly )
     
     6 ) Total Views Recived By The Channel And Some more details like 
-       Date of Published of Channel and Country of Published... </em>
+       Date of Published of Channel and Country of Published... 
+       
+     </em>
     
 
 
