@@ -5,22 +5,23 @@ to search a channel then it will show list of some Channels that have Relevance 
 the channel that they wants to know Details of it.
 
 It Provides the following Information about a YouTube Channel You Search 
-<em>
 
+<em>
+   
    1 ) YouTube Thumbnail of that Channel
     
-    2 ) YouTube Channel ID
+   2 ) YouTube Channel ID
     
-    3 ) Channel Description
+   3 ) Channel Description
     
-    4 ) Total Subscribers
+   4 ) Total Subscribers
     
-    5 ) Net Number of Videos on that Channel ( Uploaded Publicaly )
+   5 ) Net Number of Videos on that Channel ( Uploaded Publicaly )
     
-    6 ) Total Views Recived By The Channel And Some more details like 
+   6 ) Total Views Recived By The Channel And Some more details like 
        Date of Published of Channel and Country of Published... 
        
-     </em>
+   </em>
     
 
 
