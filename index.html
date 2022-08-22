@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joanalyser Youtube Channel Analytics</title>
+
+                    
+
+                                <!-- Swipper CSS -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+                                <!-- Favicon -->
+
+        <link rel="shortcut icon" href="assets/img/favicons.svg" type="image/x-icon">
+
+                                <!-- BOXICONS -->
+
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+                                <!-- Remix Icons -->
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+                                <!-- CSS -->
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+    </head>
+<body class>
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Joanalyser <i class="ri-line-chart-fill"></i>
+                </a>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt-2' ></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#search" class="nav__link">
+                                <i class="ri-search-eye-line"></i>
+                                <span>Search Manually</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#analyze" class="nav__link">
+                                <i class="ri-line-chart-fill"></i>
+                                <span>Analytics</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="ri-feedback-line"></i>
+                                <span>Feedback</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                                <!-- Theme change button -->
+
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                
+            </nav>
+
+        </header>
+
+        <main class="main">
+
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Discover <br> Youtube Channel <br> Details
+                        </h1>
+                        <p class="home__description">
+                            You Will Get the Details of Youtube Channel , that will You
+                            search. The Content that will come on your Search
+                            is not considered by us its a<i> Real-Time 
+                            API Response.</i><em>
+                            The Content Shown By This Webiste is belong 
+                            to their respective owners.</em>
+
+                        </p>
+                        <div class="home__search" >
+                            <i class="ri-youtube-line"></i>
+                            <input type="search" placeholder="Search by Name ..." class="home__search-input" id = 'home__search-input'>
+                            
+                            <button class="button" onclick="getChannelName(searchInputbox.value)">Search</button>
+                        </div>
+                        <div class="home__value">
+                            <div>
+                                <h1 class="home__value-number">
+                                    Fast 
+
+                                </h1>
+                                <span class="home__value-description">
+                                    Results <br> 
+                                </span>
+                            </div>
+
+                            <div>
+                                <h1 class="home__value-number">
+                                    Realtime 
+
+                                </h1>
+                                <span class="home__value-description">
+                                    Fetched data By API <br> 
+                                </span>
+                            </div>
+
+
+                            <div>
+                                <h1 class="home__value-number">
+                                    Get In 
+
+                                </h1>
+                                <span class="home__value-description">
+                                    See any Channel Details <br> 
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                  
+
+                       
+                    </div>
+                </div>
+
+            </section>
+           
+        <section class="popular section" id ="search">
+                <div class="container">
+                    <span class="section__subtitle"> Popular Searches ( Only Showing Top 6 Search Result)</span>
+                    <h2 class="section__title">
+                        Channel You Searched
+                      <span>.</span>
+                    </h2>
+                    <div class="popular__container swiper">
+                        <div class="swiper-wrapper">
+                            
+                            <article class="popular__card swiper-slide channel__number1">
+                                
+                                <img src="assets/img/popular1.jpg" alt="" class="popular__img">
+                            
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Channel Name
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Channel Id <span class = "channelcreaterid1"></span></h3>
+                                        <p class="popular__description">
+                                           Channel Breif Description
+                                        </p>
+                                    
+
+                                </div>
+                            </article>
+
+
+                            <article class="popular__card swiper-slide channel__number2">
+                                <img src="assets/img/popular1.jpg" alt="" class="popular__img ">
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Channel Name
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Channel Id</h3>
+                                        <p class="popular__description">
+                                           Channel Breif Description
+                                        </p>
+                                    
+
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide channel__number3">
+                                <img src="assets/img/popular1.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Channel Name
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Channel Id</h3>
+                                        <p class="popular__description">
+                                           Channel Breif Description
+                                        </p>
+                                    
+
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide channel__number4">
+                                <img src="assets/img/popular1.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Channel Name
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Channel Id</h3>
+                                        <p class="popular__description">
+                                           Channel Breif Description
+                                        </p>
+                                    
+
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide  channel__number5">
+                                <img src="assets/img/popular1.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Channel Name
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Channel Id</h3>
+                                        <p class="popular__description">
+                                           Channel Breif Description
+                                        </p>
+                                    
+
+                                </div>
+                            </article>
+
+
+                            <article class="popular__card swiper-slide  channel__number6">
+                                <img src="assets/img/popular1.jpg" alt="" class="popular__img">
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Channel Name
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Channel Id</h3>
+                                        <p class="popular__description">
+                                           Channel Breif Description
+                                        </p>
+                                    
+
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class='bx bx-chevron-right'></i>
+
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-chevron-left'></i>
+ 
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="value section" id="analyze">
+
+                <div class="value__container container grid">
+                    <div class="value__images">
+                        <div class="value__orbe"></div>
+                        <div class="value__img">
+                            <img src="assets/img/value.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="value__content">
+                        <div class="value__data">
+                            <span class="section__subtitle">Your Selected Channel</span>
+                            <h2 class="section__title creater__title">
+                                Channel Name<span>.</span>
+
+                            </h2>
+                            <p class="value__description creater__description">
+                                
+                                Channel Description
+                            </p>
+                        </div>
+                        <div class="value__accordion">
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="ri-youtube-fill value__accordion-icon"></i>
+                                    <h3 class="value-accordion-title subscriber__count">
+                                        Subscriber Counts
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow' ></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description subscriber__count-number">
+                                        Value of Subscribers
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion">
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="ri-eye-line value__accordion-icon"></i>
+                                    <h3 class="value-accordion-title video__count">
+                                        Videos Count
+
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow'></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description video__count-number">
+                                       Value of Videos
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion">
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class='bx bxs-bar-chart-square value__accordion-icon'></i>
+                                    <h3 class="value-accordion-title views__count">
+                                        Views Count
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow' ></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description views__count-number">
+                                        Value of View Count
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="value__accordion">
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class='bx bxs-check-square value__accordion-icon'></i>
+                                    <h3 class="value-accordion-title creater__details">
+                                        Some more Data of Selected Channel
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class='bx bxs-down-arrow' ></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description creater__details-code">
+                                        Channel ID , Pubslished Date, Published Country
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+         
+        </main>
+
+
+
+        <section class="subscribe section" id = "contact">
+            <div class="subscribe__container container">
+                <h1 class="subscribe__title">
+                    Have Enjoyed The Joanalyser <i class="ri-line-chart-fill"></i> App
+                </h1>
+                <p class="subscribe__description">
+                    The App is in Beta State and 
+                    will be more user Freindly in upcoming time. Please 
+                    Click On 'Enjoyed' If you Had.
+                </p>
+                <button class="button subscribe__button" onclick="happy()">
+                    Enjoyed
+                </button>
+            </div>
+            
+        </section>
+
+
+
+        <footer class="footer section">
+           
+            <div class="footer__info container grid">
+                <span class="footer__copy">
+                    &#169; Shubham Maurya. All rigths reserved
+                </span>
+                
+            </div>
+
+        </footer>
+
+    
+
+
+                    <!-- SCROLL REVEL -->
+
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-chevrons-up' ></i>
+        </a>
+                   
+
+
+                    <!-- Swipper JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+                    <!-- Moment -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            
+
+                    <!-- Sweet Alert -->
+
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+        
+                    <!-- Google Api -->
+
+    <script src="https://apis.google.com/js/api.js"></script>  
+    
+                    <!-- MAIN JS -->
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
