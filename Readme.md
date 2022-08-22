@@ -1,13 +1,13 @@
 # Joanalyzer__Responsive__Website
 
-Joanalyzer is a kind of app that let you know about any youtube channels it allows anyone
+Joanalyzer is a kind of app that let you know about any YouTube channels it allows anyone
 to search a channel then it will show some result of that search , By that any-one can select
 the channel that they wants to know Details of it.
 
-It Provides the following Information about a Youtube Channel You Search: 
+It Provides the following Information about a YouTube Channel You Search: 
 
-    1) Youtube Thumbnail of Channel
-    2) Youtube Channel ID
+    1) YouTube Thumbnail of Channel
+    2) YouTube Channel ID
     3) Channel Description
     4) Total Subscribers
     5) Net Number of Videos on that Channel ( Uploaded Publicaly )
