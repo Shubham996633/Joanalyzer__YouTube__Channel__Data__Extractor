@@ -48,150 +48,175 @@ function getChannelName(name){
 function showChannelName(name){
 
    
-      const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
       
-      Toast.fire({
-        icon: 'success',
-        title: 'Now Go Down and Select a Channel to see Details'
-      })
+
+      if(name.items.length <= 1){
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 4500,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        
+        Toast.fire({
+          icon: 'error',
+          title: '<b><i>The Channel List unable to update. </i></b> Not able to find the Channel, please try some other search'
+        })
+
+      }else{
+
+
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 4500,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        
+        Toast.fire({
+          icon: 'success',
+          title: '<b><i>The Channel List got updated. </i></b> Now Go Down and Select a Channel to see Details'
+        })
+
     
  
-    console.log(name)
-    let channel1 = document.querySelector('.channel__number1')
-    let channel2 = document.querySelector('.channel__number2')
-    let channel3 = document.querySelector('.channel__number3')
-    let channel4 = document.querySelector('.channel__number4')
-    let channel5 = document.querySelector('.channel__number5')
-    let channel6 = document.querySelector('.channel__number6')
+        console.log(name)
+        let channel1 = document.querySelector('.channel__number1')
+        let channel2 = document.querySelector('.channel__number2')
+        let channel3 = document.querySelector('.channel__number3')
+        let channel4 = document.querySelector('.channel__number4')
+        let channel5 = document.querySelector('.channel__number5')
+        let channel6 = document.querySelector('.channel__number6')
 
-    
-    channel1.innerHTML = `<a href = "#analyze" class = "analytic"> <img src="${name.items[0].snippet.thumbnails.high.url}" alt= "" class="popular__img">
-    
-                                <div class="popular__data">
-                                <h2 class="popular__price">
-                                    ${name.items[0].snippet.channelTitle}
+        
+        channel1.innerHTML = `<a href = "#analyze" class = "analytic"> <img src="${name.items[0].snippet.thumbnails.high.url}" alt= "" class="popular__img">
+        
+                                    <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        ${name.items[0].snippet.channelTitle}
 
-                                </h2>
+                                    </h2>
 
-                                <h3 class="popular__title">Youtube Channel ID <span class = "channelcreaterid1">${name.items[0].snippet.channelId}</span></h3>
+                                    <h3 class="popular__title">Youtube Channel ID <span class = "channelcreaterid1">${name.items[0].snippet.channelId}</span></h3>
+                                        <p class="popular__description">
+                                            ${name.items[0].snippet.description}
+                                        </p>
+                                    
+
+                                        </div>
+                                        
+                                        <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore" id="channelcreater1">See More</button></a></a>`
+
+
+        
+        
+        channel2.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[1].snippet.thumbnails.high.url}" alt= "" class="popular__img">
+        
+                                    <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        ${name.items[1].snippet.channelTitle}
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid2">${name.items[1].snippet.channelId}</span></h3>
+                                        <p class="popular__description">
+                                            ${name.items[1].snippet.description}
+                                        </p>
+                                    
+
+                                        </div>
+                                        
+                                        <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater2">See More</button></a></a>`
+
+
+        
+
+
+
+        channel3.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[2].snippet.thumbnails.high.url}" alt= "" class="popular__img">
+        
+                                    <div class="popular__data">
+                                    <h2 class="popular__price">
+                                    ${name.items[2].snippet.channelTitle}
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid3">${name.items[2].snippet.channelId}</span></h3>
                                     <p class="popular__description">
-                                        ${name.items[0].snippet.description}
+                                    ${name.items[2].snippet.description}
                                     </p>
-                                
+
 
                                     </div>
-                                    
-                                    <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore" id="channelcreater1">See More</button></a></a>`
+        
+                                    <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater3">See More</button></a></a>`
 
+        channel4.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[3].snippet.thumbnails.high.url}" alt= "" class="popular__img">
+        
+                                    <div class="popular__data">
+                                    <h2 class="popular__price">
+                                    ${name.items[3].snippet.channelTitle}
 
-    
-    
-    channel2.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[1].snippet.thumbnails.high.url}" alt= "" class="popular__img">
-    
-                                <div class="popular__data">
-                                <h2 class="popular__price">
-                                    ${name.items[1].snippet.channelTitle}
+                                    </h2>
 
-                                </h2>
-
-                                <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid2">${name.items[1].snippet.channelId}</span></h3>
+                                    <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid4">${name.items[3].snippet.channelId}</span></h3>
                                     <p class="popular__description">
-                                        ${name.items[1].snippet.description}
+                                    ${name.items[3].snippet.description}
                                     </p>
-                                
+
 
                                     </div>
+        
+                                    <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater4">See More</button></a></a>`
+
+        channel5.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[4].snippet.thumbnails.high.url}" alt= "" class="popular__img">
+        
+                                    <div class="popular__data">
+                                    <h2 class="popular__price">
+                                    ${name.items[4].snippet.channelTitle}
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid5">${name.items[4].snippet.channelId}</span></h3>
+                                    <p class="popular__description">
+                                    ${name.items[4].snippet.description}
+                                    </p>
+
+
+                                    </div>
+        
+                                    <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater5">See More</button></a></a>`
+
+        channel6.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[5].snippet.thumbnails.high.url}" alt= "" class="popular__img">
+        
+                                    <div class="popular__data">
+                                    <h2 class="popular__price">
+                                    ${name.items[5].snippet.channelTitle}
+
+                                    </h2>
+
+                                    <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid6">${name.items[5].snippet.channelId}</span></h3>
+                                    <p class="popular__description">
+                                    ${name.items[5].snippet.description}
+                                    </p>
+
+
+                                    </div>
+        
+                                    <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater6">See More</button></a></a>`
+
                                     
-                                    <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater2">See More</button></a></a>`
-
-
-    
-
-
-
-    channel3.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[2].snippet.thumbnails.high.url}" alt= "" class="popular__img">
-    
-                                <div class="popular__data">
-                                <h2 class="popular__price">
-                                ${name.items[2].snippet.channelTitle}
-
-                                </h2>
-
-                                <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid3">${name.items[2].snippet.channelId}</span></h3>
-                                <p class="popular__description">
-                                 ${name.items[2].snippet.description}
-                                </p>
-
-
-                                </div>
-    
-                                <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater3">See More</button></a></a>`
-
-    channel4.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[3].snippet.thumbnails.high.url}" alt= "" class="popular__img">
-    
-                                <div class="popular__data">
-                                <h2 class="popular__price">
-                                ${name.items[3].snippet.channelTitle}
-
-                                </h2>
-
-                                <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid4">${name.items[3].snippet.channelId}</span></h3>
-                                <p class="popular__description">
-                                 ${name.items[3].snippet.description}
-                                </p>
-
-
-                                </div>
-    
-                                <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater4">See More</button></a></a>`
-
-    channel5.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[4].snippet.thumbnails.high.url}" alt= "" class="popular__img">
-    
-                                <div class="popular__data">
-                                <h2 class="popular__price">
-                                ${name.items[4].snippet.channelTitle}
-
-                                </h2>
-
-                                <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid5">${name.items[4].snippet.channelId}</span></h3>
-                                <p class="popular__description">
-                                 ${name.items[4].snippet.description}
-                                </p>
-
-
-                                </div>
-    
-                                <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater5">See More</button></a></a>`
-
-    channel6.innerHTML = `<a href = "#analyze" class = "analytic"><img src="${name.items[5].snippet.thumbnails.high.url}" alt= "" class="popular__img">
-    
-                                <div class="popular__data">
-                                <h2 class="popular__price">
-                                ${name.items[5].snippet.channelTitle}
-
-                                </h2>
-
-                                <h3 class="popular__title">Youtube Channel ID : <span class = "channelcreaterid6">${name.items[5].snippet.channelId}</span></h3>
-                                <p class="popular__description">
-                                 ${name.items[5].snippet.description}
-                                </p>
-
-
-                                </div>
-    
-                                <a href = "#analyze" class= "seemore-link"><button class = "button button__seemore channelcreater6">See More</button></a></a>`
-
-                                
+}
 }
 
 const youtuber1 = document.querySelector('.channel__number1');
