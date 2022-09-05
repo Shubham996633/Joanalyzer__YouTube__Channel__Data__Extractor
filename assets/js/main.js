@@ -69,6 +69,9 @@ function showChannelName(name){
         })
 
       }else{
+        var offsets = document.getElementById("search").offsetTop
+       
+        window.scroll(0,offsets);
 
 
         const Toast = Swal.mixin({
@@ -85,8 +88,10 @@ function showChannelName(name){
         
         Toast.fire({
           icon: 'success',
-          title: '<b><i>The Channel List got updated. </i></b> Now Go Down and Select a Channel to see Details'
+          title: '<b><i>The Channel List got updated. </i></b>'
         })
+
+       
 
     
  
@@ -219,10 +224,15 @@ function showChannelName(name){
 }
 }
 
+
+
 const youtuber1 = document.querySelector('.channel__number1');
 youtuber1.addEventListener('click', () => {
 
-
+ 
+  var offs = document.getElementById("search1").offsetTop
+       
+  window.scroll(0,offs);
 
   const Toast = Swal.mixin({
     toast: true,
