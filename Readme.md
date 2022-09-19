@@ -74,6 +74,6 @@ the channel that they wants to know Details of it.
  
    Some-time there is a clash between APIs so By that reason Joanalyzer can't  
    able to complete your desired request so please visit after Some-time upto that it will be resolved by The Developer
-   If not resolved Then Drop a Mail here : ( risjiomaujio7654@gmail.com )
+   If not resolved Then Drop a Mail here : ( <a href = "mailto:shubhammaurya996633+work@gmail.com"> Shubham_Maurya</a> )
 
 
