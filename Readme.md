@@ -62,7 +62,7 @@ the channel that they wants to know Details of it.
 
    ## Disclaimer   
    
-   The Content Fetched By The Joanalyser is not owned by Me , its fetched by API and the Content in above images is belong to their respective owners ( @jonitamusic )
+   The Content Fetched By The Joanalyser is not owned by Me , its fetched by API and the Content in above images is belong to their respective owners ( <a href = "https://www.youtube.com/user/jonitamusic">jonitamusic</a> )
    
   # API Provider: <a href = "https://developers.google.com/youtube/v3">Google ( Youtube API v3 )</a> 
          
