@@ -709,23 +709,7 @@ body.dark-theme{
 .footer__container{
     row-gap: 2.5rem;
 }
-.footer__logo{
-    color: var(--first-color);
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-semi-bold);
-    display: inline-flex;
-    align-items: center;
-    column-gap: .25rem;
-    margin-bottom: .75rem;
-}
-.footer__logo i {
-    font-size: 1.25rem;
-}
-.footer__description,
-.footer__link{
-    font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
-}
+
 .footer__content,
 .footer__links{
     display: grid;
