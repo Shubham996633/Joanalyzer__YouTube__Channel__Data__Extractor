@@ -11,8 +11,6 @@ the channel that they wants to know Details of it.
                       
 
 
-
-
 ### It Provides the following Information about a YouTube Channel You Search 
 
 <em>
