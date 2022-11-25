@@ -1,6 +1,4 @@
-import api_key from "./api_keys.js";
-
-
+import { api_key } from "./api_keys.js";
 const youtubeApi = {
 
   key: api_key,
